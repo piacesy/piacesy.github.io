@@ -1,11 +1,9 @@
 name: Scrape Talk Locations
 
+# Run manually from the Actions tab when you have real talks in _talks/.
+# (Running on an empty _talks/ directory fails.)
 on:
-  push:
-    paths:
-      - 'talks/**'
-      - '_talks/**'
-      - 'talkmap.ipynb'
+  workflow_dispatch:
 
 jobs:
   build:
